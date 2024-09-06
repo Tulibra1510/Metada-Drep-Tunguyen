@@ -1,0 +1,132 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "givenName": "CIP119:givenName",
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "doNotList": "CIP119:doNotList",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a40101032720062158205028bf59aa19bef090bf869d5591723535eccd03984badffe4eb1924258026d0"
+        },
+        "signature": {
+          "@value": "845846a201276761646472657373583901763b1e90180d639d512e2ff337d1c2d50acfea7c84972385b79623674fb4c1c4fc2e3ed60f9eaab93936de2c692b9d0aee3a742f75269309a166686173686564f45844566572696679204452657020647265703135747635396e677435387a6d3970733564746734763761346d717a746635376c38736c6b7a66786477326b666b38716474647a58408f2430759a7589b3e686de973e7cec73689f9dea270e9356be768d491169e0b125324c45a393b1747365a642a35827dec8449f8daf1349e50929a2084e3d3509"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": ""
+    },
+    "doNotList": {
+      "@value": "false"
+    },
+    "email": {
+      "@value": "tunguyenvan151094@gmail.com"
+    },
+    "givenName": {
+      "@value": "Tu-Nguyen"
+    },
+    "motivations": {
+      "@value": "I believe in transparent on-chain governance. Personal experience: I have been involved in Blockchain industry since 2017; I joined Catalyst since Fund 9; I am an admin of Telegram group (https://t.me/Fimi_PA); I have had 2 proposals funded in Catalyst."
+    },
+    "objectives": {
+      "@value": "My objective are: Promote decentralized on-chain governance; vote fairly and transparently on proposals that have a positive impact on the Cardano ecosystem."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9mrk85srqxk88239chlxd73ct2s4nl20jzfwgu9k7tzxe60knquflpw8mtql842hyundh3vdy4e6zhw8f6z7afxjvys34qg2p"
+    },
+    "qualifications": {
+      "@value": "I have completed the Drep Pioneer course in Vietnam."
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "My Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/Tulibra_1510"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "My telegram group discusses Catalyst information"
+        },
+        "uri": {
+          "@value": "https://t.me/Fimi_PA"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "IOG Research Papers Vietnamese version that I have completed"
+        },
+        "uri": {
+          "@value": "https://cardano.vn/docs/Cardano360/TechDocs/intro/"
+        }
+      }
+    ]
+  }
+}
